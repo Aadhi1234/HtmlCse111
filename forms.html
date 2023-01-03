@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Form tag example
+        </title>
+    </head>
+    <body>
+        <form id="form" action="form.php" method="post">
+            <fieldset>
+                <legend>Profile Info</legend>
+            </fieldset>
+
+            Name: <input type="text" placeholder="Full Name"><br>
+            Email: <input type="email" placeholder="Your Email"><br>
+            Password: <input type="password">
+            <br><br>
+            Gender:<br>
+            <input type="radio" name="any random shit">Male<br>
+            <input type="radio" name="any random shit">Female<br>
+            <br><br>
+
+            Type of Computer:<br>
+            <input type="checkbox">I have a laptop<br>
+            <input type="checkbox">I have a desktop<br>
+            <br><br>
+            Age:<br>
+            <select>
+                <option>0-20</option>
+                <option>20-30</option>
+                <option>30+</option>
+            </select>
+            <br><br>
+
+            Biodata:<br>
+            <textarea cols="20" rows="5"></textarea>
+            <br><br>
+            <input type="submit" value="Save my info">
+            <input type="reset" value="clear" >   
+            <input type="button" onclick="myFunction()" value="Submit Form">
+         </form>
+         <script>
+            function myFunction()
+            {
+                document.getElementById("form").submit();
+            }
+        </script>  
+    </body>
+</html>
